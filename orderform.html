@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Privé Café </title>
+  <link rel="stylesheet" href="orderform.css">
+ 
+	<script language=javascript>
+
+function computeTotal()
+{
+var customer = frmorderform.txtcustomer.value;
+var americano = frmorderform.txtamericano.value;
+var latte = frmorderform.txtlatte.value;
+var cappuccino = frmorderform.txtcappuccino.value;
+var icedamericano = frmorderform.txticedamericano.value;
+var macchiato = frmorderform.txtmacchiato.value;
+var coldbrew = frmorderform.txtcoldbrew.value;
+var mocha = frmorderform.txtmocha.value;
+var vanilla = frmorderform.txtvanilla.value;
+var caramel = frmorderform.txtcaramel.value;
+var dammann = frmorderform.txtdammann.value;
+var naturelles = frmorderform.txtnaturelles.value;
+var rbtea = frmorderform.txtrbtea.value;
+var panisse = frmorderform.txtpanisse.value;
+var croissant = frmorderform.txtcroissant.value;
+var tartines = frmorderform.txttartines.value;
+var crepes = frmorderform.txtcrepes.value;
+var vol-au-vent = frmorderform.txtvol-au-vent.value;
+var chaussons = frmorderform.txtchaussons.value;
+var m4pcs = frmorderform.txtm4pcs.value;
+var m8pcs = frmorderform.txtm8pcs.value;
+var m12pcs = frmorderform.txt12pcs.value;
+var large1 = frmorderform.txtlarge1.value;
+var grande1 = frmorderform.txtgrande1.value;
+var venti1 = frmorderform.txtventi1.value;
+var large2 = frmorderform.txtlarge2.value;
+var grande2 = frmorderform.txtgrande2.value;
+var venti2 = frmorderform.txtventi2.value;
+
+
+if(frmorderform.txtcustomer.value=="")
+alert("Check the Customer Name");
+else
+{
+var total= parseFloat(americano) +parseFloat(latte)+parseFloat(cappuccino)+parseFloat(icedamericano)
++parseFloat(macchiato) +parseFloat(coldbrew)+parseFloat(mocha)+parseFloat(vanilla)
++parseFloat(caramel) +parseFloat(dammann)+parseFloat(naturelles)+parseFloat(rbtea)
++parseFloat(panisse) +parseFloat(croissant)+parseFloat(tartines)+parseFloat(crepes)
++parseFloat(vol-au-vent) +parseFloat(chaussons)+parseFloat(m4pcs)+parseFloat(m8pcs)+parseFloat(m12pcs)
++parseFloat(large1) +parseFloat(grande1)+parseFloat(venti1)+parseFloat(large2)+parseFloat(grande2)+parseFloat(venti2);
+
+document.write("<center>OFFICIAL RECEIPT");
+document.write("<br>-------------------------------");
+document.write("<br> Customer Name : " + customer);
+document.write("<br> Total Amount : " + total);
+
+document.write("<br><br>Thank you, " + customer + " Come again !");
+}
+}
+
+</script>
+ </head>
+ 
+<body>
+	<div class="nav">
+		<div class="bn">
+			<h1 href="home.html"> Privé Café </h1>
+		</div>
+			<a href="home.html">  Home </a> 
+			<a href="menu.html">  Menu </a> 
+			<a href="index.html">  Contact Us </a> 
+			<a href="faqs.html">  FAQs </a> 
+    </div>  
+	
+<div class="cover">
+ 
+<br><br><br><br><br><br>
+	<h1 align=center>Order Now</h1>
+	
+<div class="container">
+<div class="contact-box">
+
+<form name=frmorderform>
+<h2>MENU ORDER FORM</h2>
+
+<p><label for="txtcustomer"><b>Customer Name: </b></label>
+<input type=text name=txtcustomer placeholder="Enter Your Name" ></p>
+
+<center><hr color="brown" width="100%" size="3">
+<br>
+
+<table>
+
+<tr>
+<th>HOT COFFEE</th>
+<th>TALL</th>
+<th>GRANDE</th>
+<th>VENTI</th>
+</tr>
+
+<tr>
+<td><br><input type=checkbox onclick=txtamericano.value=1>&nbsp;&nbsp;&nbsp;Americano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtamericano value=0> 
+
+<input type=checkbox onclick=txtlatte.value=1>&nbsp;&nbsp;&nbsp;Latte &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtlatte value=0>
+
+<input type=checkbox onclick=txtcappuccino.value=1>&nbsp;&nbsp;&nbsp;Cappuccino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtcappuccino value=0></td>
+
+<td><br>&nbsp;<input type=checkbox onclick=txtlarge1.value=60>&nbsp;&nbsp;&nbsp;₱ 60
+<input type=hidden name=txtlarge1 value=0></td>
+<td><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=checkbox onclick=txtgrande1.value=80>&nbsp;&nbsp;&nbsp;₱ 80
+<input type=hidden name=txtgrande1 value=0></td></td>
+<td><br>&nbsp;&nbsp;<input type=checkbox onclick=txtventi1.value=110>&nbsp;&nbsp;&nbsp;₱ 110
+<input type=hidden name=txtventi1 value=0></td></td>
+
+<tr>
+<th colspan="6"></th>
+</tr>
+
+<tr>
+<th>COLD DRINKS</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<td><br><input type=checkbox onclick=txticedamericano.value=1>&nbsp;&nbsp;&nbsp;Iced-Americano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txticedamericano value=0> 
+
+<input type=checkbox onclick=txtmacchiato.value=1>&nbsp;&nbsp;&nbsp;Macchiato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtmacchiato value=0>
+
+<input type=checkbox onclick=txtcoldbrew.value=1>&nbsp;&nbsp;&nbsp;Cold-Brew&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtcoldbrew value=0></td>
+
+<td><br>&nbsp;<input type=checkbox onclick=txtlarge1.value=60>&nbsp;&nbsp;&nbsp;₱ 60
+<input type=hidden name=txtlarge1 value=0></td>
+<td><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=checkbox onclick=txtgrande1.value=80>&nbsp;&nbsp;&nbsp;₱ 80
+<input type=hidden name=txtgrande1 value=0></td></td>
+<td><br>&nbsp;&nbsp;<input type=checkbox onclick=txtventi1.value=110>&nbsp;&nbsp;&nbsp;₱ 110
+<input type=hidden name=txtventi1 value=0></td></td>
+
+<tr>
+<th colspan="6"></th>
+</tr>
+
+<tr>
+<th>FRAPPUCCINO</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<td><br><input type=checkbox onclick=txtmocha.value=1>&nbsp;&nbsp;&nbsp;Mocha Cookie Crumble Frappuccino &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtmocha value=0> 
+
+<input type=checkbox onclick=txtvanilla.value=1>&nbsp;&nbsp;&nbsp;Caffè Vanilla Frappuccino &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtvanilla value=0>
+
+<input type=checkbox onclick=txtcaramel.value=1>&nbsp;&nbsp;&nbsp;Caramel Ribbon Crunch Frappuccino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtcaramel value=0></td>
+
+<td><br>&nbsp;<input type=checkbox onclick=txtlarge2.value=70>&nbsp;&nbsp;&nbsp;₱ 70
+<input type=hidden name=txtlarge2 value=0></td>
+<td><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=checkbox onclick=txtgrande2.value=100>&nbsp;&nbsp;&nbsp;₱ 100
+<input type=hidden name=txtgrande2 value=0></td></td>
+<td><br>&nbsp;&nbsp;<input type=checkbox onclick=txtventi2.value=130>&nbsp;&nbsp;&nbsp;₱ 130
+<input type=hidden name=txtventi2 value=0></td></td>
+
+<tr>
+<th colspan="6"></th>
+</tr>
+
+<tr>
+<th>TEA</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<td><br><input type=checkbox onclick=txtdammann.value=1>&nbsp;&nbsp;Dammann Tea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtdammann value=0> 
+
+<input type=checkbox onclick=txtnaturelles.value=1>&nbsp;&nbsp;&nbsp;Infusions Naturelles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<input type=hidden name=txtnaturelles value=0>
+
+<input type=checkbox onclick=txtrbtea.value=1>&nbsp;&nbsp;&nbsp;Royal Breakfast Tea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtrbtea value=0></td>
+
+<td><br>&nbsp;<input type=checkbox onclick=txtlarge2.value=70>&nbsp;&nbsp;&nbsp;₱ 70
+<input type=hidden name=txtlarge2 value=0></td>
+<td><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=checkbox onclick=txtgrande2.value=100>&nbsp;&nbsp;&nbsp;₱ 100
+<input type=hidden name=txtgrande2 value=0></td></td>
+<td><br>&nbsp;&nbsp;<input type=checkbox onclick=txtventi2.value=130>&nbsp;&nbsp;&nbsp;₱ 130
+<input type=hidden name=txtventi2 value=0></td></td>
+</tr>
+
+</table>
+
+<br><br>
+<center><hr color="brown" width="100%" size="3">
+<br>
+
+<form name=frmorderform>
+<table>
+
+<tr>
+<th colspan="6"><h4>SNACKS</h4></th>
+</tr>
+<tr>
+<td colspan="6"><h5>FRENCH BAKERY</h5><input type=checkbox onclick=txtpanisse.value=70>&nbsp;&nbsp;&nbsp;₱ 70  &nbsp; Panisse  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtpanisse value=0> 
+
+<input type=checkbox onclick=txtcroissant.value=100>&nbsp;&nbsp;&nbsp;₱ 100 &nbsp; Croissant and  Poitou-Charentes Butter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtcroissant value=0>
+
+<input type=checkbox onclick=txttartines.value=130>&nbsp;&nbsp;&nbsp;₱ 130 &nbsp; Viennoiseries and  Tartines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txttartines value=0></td>
+</tr>
+
+<tr>
+<td colspan="6"><br><h5>SWEET PASTRY</h5><input type=checkbox onclick=txtcrepes.value=60>&nbsp;&nbsp;&nbsp;₱ 60  &nbsp; Crepes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtcrepes value=0> 
+
+<input type=checkbox onclick=txtvol-au-vent.value=90>&nbsp;&nbsp;&nbsp;₱ 90 &nbsp;  Sweet Vol-au-vent --&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtvol-au-vent value=0>
+
+<input type=checkbox onclick=txtchaussons.value=130>&nbsp;&nbsp;&nbsp;₱ 130 &nbsp;  3 Pieces of Chaussons Aux Pommes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtchaussons value=0></td>
+</tr>
+
+<tr>
+<td colspan="3"><br><h5>MACARONS</h5><input type=checkbox onclick=txtm4pcs.value=60>&nbsp;&nbsp;&nbsp;₱ 60 &nbsp;  4 Pieces of Macarons  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtm4pcs value=0> 
+
+<input type=checkbox onclick=txtm8pcs.value=120>&nbsp;&nbsp;&nbsp;₱ 120 &nbsp;  8 Pieces of Macarons  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txtm8pcs value=0>
+
+<input type=checkbox onclick=txt12pcs.value=180>&nbsp;&nbsp;&nbsp;₱ 180 &nbsp;  12 Pieces of Macarons  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=hidden name=txt12pcs value=0></td>
+</tr>
+
+<tr>
+<td colspan="3"><center><button type="submit" onclick=computeTotal();>Submit Order</button> &nbsp;&nbsp;&nbsp;&nbsp;
+<button type="reset">Reset</button></td>
+</tr>
+ 
+ </form>
+</table>
+
+<br><br>
+<center><hr color="brown" width="100%" size="3">
+<br>
+
+</body>
+</html>
