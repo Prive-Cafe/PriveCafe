@@ -63,7 +63,7 @@ a, .bn{
 	transition: 0.3s;
 }
 .nav a:hover{
-	color: #ffffff;
+	color: brown;
 }
 .nav a:hover:after{
 	width: 100%;
