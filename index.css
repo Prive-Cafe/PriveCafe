@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(bg.png);
+    background-image: url(bg1.png);
 	min-height:100vh;
 	overflow-x: hidden;
 	background-attachment: scroll;
@@ -48,7 +48,7 @@ a, .bn{
 .nav a:after{
 	content: "";
 	position: absolute;
-	background-color: #ff3c78;
+	background-color: brown;
 	height: 3px;
 	width: 0;
 	left: 0;

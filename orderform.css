@@ -51,7 +51,7 @@ a, .bn{
 .nav a:after{
 	content: "";
 	position: absolute;
-	background-color: #ff3c78;
+	background-color: brown;
 	height: 3px;
 	width: 0;
 	left: 0;
@@ -59,7 +59,7 @@ a, .bn{
 	transition: 0.3s;
 }
 .nav a:hover{
-	color: brown;
+	color: #ffffff;
 }
 .nav a:hover:after{
 	width: 100%;
